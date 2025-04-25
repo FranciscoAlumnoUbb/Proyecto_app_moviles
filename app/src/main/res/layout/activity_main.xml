@@ -9,18 +9,163 @@
     android:orientation="vertical"
     >
 
+<!--    Primera caja-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="4"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reciclaje"
+            android:layout_centerInParent="true"
+            >
+
+        </ImageView>
+    </RelativeLayout>
+</LinearLayout>
+
+<!--    Segunda caja-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        >
+
+<!--        Label correo-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario"
+                    android:layout_centerInParent="true"
+
+                    >
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+<!--        Input correo-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:hint="Ingrese su correo"
+                    android:layout_centerInParent="true"
+                    >
+
+                </EditText>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+<!--    Tercera caja-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        >
+        <!--        Label correo-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario"
+                    android:layout_centerInParent="true"
+
+                    >
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--        Input correo-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:hint="Ingrese su correo"
+                    android:layout_centerInParent="true"
+                    >
+
+                </EditText>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        >
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Esto es una prueba"
+        android:text="Iniciar sesión"
         android:layout_centerInParent="true"
         >
 
-    </TextView>
+    </Button>
 </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>
