@@ -16,6 +16,9 @@
             android:name=".Perfil_Activity"
             android:exported="false" />
         <activity
+            android:name=".Menu_principal_activity"
+            android:exported="false" />
+        <activity
             android:name=".Tutorial_activity"
             android:exported="false" />
         <activity
