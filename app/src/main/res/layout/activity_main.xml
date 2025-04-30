@@ -142,6 +142,28 @@
                     </EditText>
                 </RelativeLayout>
             </LinearLayout>
+
+        </LinearLayout>
+<!--        boton sesion-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+<!--                Boton inicio sesion-->
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:text="Iniciar sesión"
+                    android:layout_centerInParent="true"
+                    >
+
+                </Button>
+            </RelativeLayout>
         </LinearLayout>
 <LinearLayout
     android:layout_width="match_parent"

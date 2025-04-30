@@ -195,6 +195,26 @@
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <!--                Boton registro-->
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:text="Registrarse"
+                    android:layout_centerInParent="true"
+                    >
+
+                </Button>
+            </RelativeLayout>
+        </LinearLayout>
 <!--        Iniciar sesion-->
         <LinearLayout
             android:layout_width="match_parent"
