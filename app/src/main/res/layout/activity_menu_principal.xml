@@ -46,6 +46,19 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <Button
+        android:id="@+id/btncerrarsesion"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="Cerrar Sesión"
+        android:layout_centerInParent="true"
+        >
 
+    </Button>
+</RelativeLayout>
     </LinearLayout>
 </LinearLayout>
