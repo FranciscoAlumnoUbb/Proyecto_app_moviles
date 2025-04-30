@@ -6,9 +6,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tutorial_activity"
+    tools:context=".Menu_principal_activity"
     android:orientation="vertical"
-    android:background="@drawable/background1">
+    android:background="@drawable/background1"
+    >
 
 
     <LinearLayout
@@ -16,20 +17,20 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         >
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tutorial"
-                android:layout_centerInParent="true"
-                android:textSize="45sp"
-                >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menú"
+        android:layout_centerInParent="true"
+        android:textSize="45sp"
+        >
 
-            </TextView>
-        </RelativeLayout>
+    </TextView>
+</RelativeLayout>
     </LinearLayout>
 
     <LinearLayout

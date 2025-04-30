@@ -22,7 +22,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Este es el titulo"
+        android:text="Login de usuario"
         android:layout_centerInParent="true"
         android:textSize="30sp"
         >
@@ -60,7 +60,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Usuario"
+                    android:text="Correo"
                     android:textSize="20sp"
                     android:layout_centerInParent="true"
                     >
@@ -81,8 +81,8 @@
             >
             <EditText
                 android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:hint="prueba para mi input"
+                android:layout_height="48dp"
+                android:hint="Ingrese su correo"
                 android:layout_centerInParent="true"
                 >
 
@@ -134,7 +134,7 @@
                     >
                     <EditText
                         android:layout_width="180dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="48dp"
                         android:hint="Contraseña"
                         android:layout_centerInParent="true"
                         >

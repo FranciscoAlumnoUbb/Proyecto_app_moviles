@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".Perfil_Activity"
     android:orientation="vertical"
-    android:background="@drawable/background1"
-    >
-    <!--    Titulo-->
+    android:background="@drawable/background1">
+
+<!--    Titulo-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,15 +23,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Registro de usuario"
+                android:text="Perfil de usuario"
                 android:layout_centerInParent="true"
-                android:textSize="30sp"
+                android:textSize="45sp"
                 >
 
             </TextView>
         </RelativeLayout>
     </LinearLayout>
-    <!--    Inputs-->
+<!--Central box-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -42,34 +43,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             >
-            <!--        Correo-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    >
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Correo"
-                            android:textSize="20sp"
-                            android:layout_centerInParent="true"
-                            >
-
-                        </TextView>
-                    </RelativeLayout>
-                </LinearLayout>
-            </LinearLayout>
-            <!--    input_correo-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -79,18 +52,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
-                    <EditText
-                        android:layout_width="180dp"
-                        android:layout_height="48dp"
-                        android:hint="Ingrese su correo"
-                        android:layout_centerInParent="true"
-                        >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nombre"
+    android:layout_centerInParent="true"
+    >
 
-                    </EditText>
+</TextView>
                 </RelativeLayout>
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                </RelativeLayout>
+            </LinearLayout>
+
         </LinearLayout>
-        <!--        Contraseña-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -101,28 +86,20 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 >
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     >
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Correo"
+                        android:layout_centerInParent="true"
                         >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Contraseña"
-                            android:textSize="20sp"
-                            android:layout_centerInParent="true"
-                            >
 
-                        </TextView>
-                    </RelativeLayout>
-                </LinearLayout>
+                    </TextView>
+                </RelativeLayout>
             </LinearLayout>
-            <!--    input_correo-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -132,14 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
-                    <EditText
-                        android:layout_width="180dp"
-                        android:layout_height="48dp"
-                        android:hint="Contraseña"
-                        android:layout_centerInParent="true"
-                        >
 
-                    </EditText>
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
@@ -153,28 +123,20 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 >
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     >
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edad"
+                        android:layout_centerInParent="true"
                         >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Contraseña"
-                            android:textSize="20sp"
-                            android:layout_centerInParent="true"
-                            >
 
-                        </TextView>
-                    </RelativeLayout>
-                </LinearLayout>
+                    </TextView>
+                </RelativeLayout>
             </LinearLayout>
-            <!--    input_correo-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -184,56 +146,91 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
-                    <EditText
-                        android:layout_width="180dp"
-                        android:layout_height="48dp"
-                        android:hint="Repita la contraseña"
-                        android:layout_centerInParent="true"
-                        >
 
-                    </EditText>
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
-<!--        Iniciar sesion-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             >
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="¿Ya tienes cuenta?, Inicia sesión"
-                    android:layout_centerInParent="true"
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ciudad"
+                        android:layout_centerInParent="true"
+                        >
+
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     >
 
-                </TextView>
-
-            </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sexo"
+                        android:layout_centerInParent="true"
+                        >
 
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
 
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
-
-    <!--    Footer-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         >
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
 
-        </RelativeLayout>
     </LinearLayout>
-
-
 </LinearLayout>
