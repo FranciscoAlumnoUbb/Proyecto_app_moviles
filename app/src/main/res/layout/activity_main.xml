@@ -7,20 +7,178 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
+    android:background="@drawable/background1"
     >
-
-<RelativeLayout
+<!--    Titulo-->
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="1"
     >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Esto es una prueba"
+        android:text="Este es el titulo"
         android:layout_centerInParent="true"
+        android:textSize="30sp"
         >
 
     </TextView>
-</RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
+<!--    Inputs-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    >
+    <!--        Correo-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario"
+                    android:textSize="20sp"
+                    android:layout_centerInParent="true"
+                    >
+
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+<!--    input_correo-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:hint="prueba para mi input"
+                android:layout_centerInParent="true"
+                >
+
+            </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+<!--        Contraseña-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contraseña"
+                            android:textSize="20sp"
+                            android:layout_centerInParent="true"
+                            >
+
+                        </TextView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!--    input_correo-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <EditText
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Contraseña"
+                        android:layout_centerInParent="true"
+                        >
+
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿No tienes cuenta? !Registrate aquí!"
+            android:layout_centerInParent="true"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+</LinearLayout>
+    </LinearLayout>
+
+
+<!--    Footer-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </RelativeLayout>
+    </LinearLayout>
+
 
 </LinearLayout>

@@ -7,13 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".Splash_activity"
     android:orientation="vertical"
-    android:background="@color/green"
+    android:background="@drawable/background1"
     >
-
+<!--Titulo-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2"
+        android:layout_weight="3"
         >
         <RelativeLayout
             android:layout_width="match_parent"
@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:text="EcoScan"
                 android:layout_centerInParent="true"
-                android:textSize="30dp"
+                android:textSize="80sp"
                 android:textStyle="bold"
                 >
 
@@ -33,11 +33,11 @@
 
         </RelativeLayout>
     </LinearLayout>
-
+<!--Contenido-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="2"
         >
         <RelativeLayout
             android:layout_width="match_parent"
@@ -48,11 +48,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:src="@drawable/reciclaje"
+                android:src="@drawable/chatrec"
                 >
 
             </ImageView>
 
+        </RelativeLayout>
+    </LinearLayout>
+<!--    Version-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Versión: 1.0.0"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                >
+            </TextView>
         </RelativeLayout>
     </LinearLayout>
 
