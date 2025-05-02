@@ -11,8 +11,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Menu_principal_activity extends AppCompatActivity {
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
+public class Menu_principal_activity extends AppCompatActivity {
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,11 +23,22 @@ public class Menu_principal_activity extends AppCompatActivity {
 
         Button cerrarSesion = (Button) findViewById(R.id.btncerrarsesion);
 
+//        cerrarSesion.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(Menu_principal_activity.this, MainActivity.class));
+//                finish();
+//            }
+//        });
+
         cerrarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
+                mAuth.signOut();
+                //googleClient.signOut();  // si usas Google
                 startActivity(new Intent(Menu_principal_activity.this, MainActivity.class));
                 finish();
+
             }
         });
 
