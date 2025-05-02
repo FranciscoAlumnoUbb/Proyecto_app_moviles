@@ -16,32 +16,23 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class Menu_principal_activity extends AppCompatActivity {
     private FirebaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
 
-        Button cerrarSesion = (Button) findViewById(R.id.btncerrarsesion);
-
-//        cerrarSesion.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(Menu_principal_activity.this, MainActivity.class));
-//                finish();
-//            }
-//        });
+        mAuth = FirebaseAuth.getInstance();
+        Button cerrarSesion = findViewById(R.id.btncerrarsesion);
 
         cerrarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mAuth.signOut();
-                //googleClient.signOut();  // si usas Google
-                startActivity(new Intent(Menu_principal_activity.this, MainActivity.class));
+                mAuth.signOut();  // Cierra sesión en Firebase
+                Intent intent = new Intent(Menu_principal_activity.this, MainActivity.class);
+                startActivity(intent);
                 finish();
-
             }
         });
-
     }
-
 }
