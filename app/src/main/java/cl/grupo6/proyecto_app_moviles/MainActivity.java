@@ -6,70 +6,87 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Context context;
+    private FirebaseAuth mAuth;
+    private EditText userCapturado, passCapturada;
+    private Button boton_inicio;
+
+    private TextView go_reg;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        context = this;
+
+
+        // Inicializa Auth
+        mAuth = FirebaseAuth.getInstance();
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
-        EditText userCapturado = (EditText) findViewById(R.id.usercorreo);
-        EditText passCapturada = (EditText) findViewById(R.id.userpass);
-        Button boton_inicio = (Button) findViewById(R.id.btninicio);
+        userCapturado = findViewById(R.id.usercorreo);
+        passCapturada = findViewById(R.id.userpass);
+        boton_inicio = findViewById(R.id.btninicio);
+        go_reg = findViewById(R.id.go_reg);
 
-        boton_inicio.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                String userIn = userCapturado.getText().toString();
-                String PassIn = passCapturada.getText().toString();
-//                startActivity(new Intent(MainActivity.this, MenuPrincipal.class));
-                String prueba = userCapturado.getText().toString();
-//                Toast.makeText(MainActivity.this, "Usuario: " + prueba, Toast.LENGTH_SHORT).show();
-                if (iniciarSesion(userIn, PassIn)) {
-                    Intent intent = new Intent(MainActivity.this, Menu_principal_activity.class);
-                    intent.putExtra("usuario", "userCapturado");
-                    startActivity(intent);
-                    finish();
-//                    startActivity(new Intent(MainActivity.this, MenuPrincipal.class));
-                    Toast.makeText(MainActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
 
-                } else {
-                    Toast.makeText(MainActivity.this, "Credenciales invalidas", Toast.LENGTH_SHORT).show();
-                }
-                userCapturado.setText("");
-                passCapturada.setText("");
+        go_reg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Registro_activity.class));
+                finish();
             }
         });
 
+
+        boton_inicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = userCapturado.getText().toString().trim();
+                String pass = passCapturada.getText().toString().trim();
+
+                if (email.isEmpty() || pass.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Completa todos los campos", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                mAuth.signInWithEmailAndPassword(email, pass)
+                        .addOnCompleteListener(MainActivity.this, task -> {
+                            if (task.isSuccessful()) {
+                                FirebaseUser user = mAuth.getCurrentUser();
+                                irAlMenuPrincipal();
+                            } else {
+                                Toast.makeText(MainActivity.this, "Error: " + task.getException().getMessage(),
+                                        Toast.LENGTH_LONG).show();
+                            }
+                        });
+            }
+        });
     }
 
-//    Datos de prueba para login
-    public static boolean iniciarSesion(String userIngresado, String claveIngresada){
-        //        Credenciales
-        String adminUser = "user";
-        String adminPassword = "1234";
-
-        if(userIngresado.equalsIgnoreCase(adminUser)){
-            if(claveIngresada.equals(adminPassword)){
-                return true;
-            }else{
-                return false;
-            }
-        }else{
-            return false;
+    @Override
+    public void onStart() {
+        super.onStart();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null) {
+            irAlMenuPrincipal();
         }
+    }
 
+    private void irAlMenuPrincipal() {
+        Intent i = new Intent(this, Menu_principal_activity.class);
+        startActivity(i);
+        finish();
     }
 }

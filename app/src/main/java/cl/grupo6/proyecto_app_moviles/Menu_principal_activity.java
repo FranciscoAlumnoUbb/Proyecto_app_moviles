@@ -11,23 +11,37 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class Menu_principal_activity extends AppCompatActivity {
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
 
-        Button cerrarSesion = (Button) findViewById(R.id.btncerrarsesion);
+        mAuth = FirebaseAuth.getInstance();
+        Button cerrarSesion = findViewById(R.id.btncerrarsesion);
+        Button go_gallery = (Button) findViewById(R.id.go_gallery);
 
-        cerrarSesion.setOnClickListener(new View.OnClickListener() {
+
+        go_gallery.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Menu_principal_activity.this, MainActivity.class));
+            public void onClick(View v) {
+                startActivity(new Intent(Menu_principal_activity.this, galeria_activity.class));
                 finish();
             }
         });
-
+        cerrarSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mAuth.signOut();  // Cierra sesión en Firebase
+                Intent intent = new Intent(Menu_principal_activity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
-
 }

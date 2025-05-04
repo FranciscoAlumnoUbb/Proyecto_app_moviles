@@ -13,7 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="3"
         >
         <RelativeLayout
             android:layout_width="match_parent"
@@ -34,7 +34,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:orientation="vertical"
         >
         <LinearLayout
@@ -46,7 +46,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -80,10 +80,13 @@
                     android:layout_height="match_parent"
                     >
                     <EditText
+                        android:id="@+id/correo_reg"
                         android:layout_width="180dp"
                         android:layout_height="48dp"
                         android:hint="Ingrese su correo"
                         android:layout_centerInParent="true"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
                         >
 
                     </EditText>
@@ -99,7 +102,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -122,7 +125,7 @@
                     </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
-            <!--    input_correo-->
+            <!--    input password-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -133,10 +136,14 @@
                     android:layout_height="match_parent"
                     >
                     <EditText
+                        android:id="@+id/pass_reg"
                         android:layout_width="180dp"
                         android:layout_height="48dp"
                         android:hint="Contraseña"
                         android:layout_centerInParent="true"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
                         >
 
                     </EditText>
@@ -151,7 +158,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -185,10 +192,14 @@
                     android:layout_height="match_parent"
                     >
                     <EditText
+                        android:id="@+id/passreg2"
                         android:layout_width="180dp"
                         android:layout_height="48dp"
                         android:hint="Repita la contraseña"
                         android:layout_centerInParent="true"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
                         >
 
                     </EditText>
@@ -206,8 +217,9 @@
                 >
                 <!--                Boton registro-->
                 <Button
-                    android:layout_width="250dp"
-                    android:layout_height="150dp"
+                    android:id="@+id/btnreg"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
                     android:text="Registrarse"
                     android:layout_centerInParent="true"
                     >
@@ -226,6 +238,7 @@
                 android:layout_height="match_parent"
                 >
                 <TextView
+                    android:id="@+id/go_login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="¿Ya tienes cuenta?, Inicia sesión"
@@ -245,7 +258,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="3"
         >
         <RelativeLayout
             android:layout_width="match_parent"
