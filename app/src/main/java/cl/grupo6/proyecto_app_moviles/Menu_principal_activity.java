@@ -24,7 +24,16 @@ public class Menu_principal_activity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         Button cerrarSesion = findViewById(R.id.btncerrarsesion);
+        Button go_gallery = (Button) findViewById(R.id.go_gallery);
 
+
+        go_gallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu_principal_activity.this, galeria_activity.class));
+                finish();
+            }
+        });
         cerrarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

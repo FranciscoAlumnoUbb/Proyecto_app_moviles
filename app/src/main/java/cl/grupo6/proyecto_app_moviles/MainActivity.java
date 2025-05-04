@@ -22,8 +22,13 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView go_reg;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+
         // Inicializa Auth
         mAuth = FirebaseAuth.getInstance();
 
@@ -43,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
 
         boton_inicio.setOnClickListener(new View.OnClickListener() {
             @Override
