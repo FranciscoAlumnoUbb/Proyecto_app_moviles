@@ -25,10 +25,18 @@ public class Menu_principal_activity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         Button cerrarSesion = findViewById(R.id.btncerrarsesion);
 
+        Button btn_go_gallery = findViewById(R.id.btn_menu_gallery);
+
+        btn_go_gallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Menu_principal_activity.this, galeria_activity.class));
+            }
+        });
         cerrarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mAuth.signOut();  // Cierra sesión en Firebase
+                mAuth.signOut();
                 Intent intent = new Intent(Menu_principal_activity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
