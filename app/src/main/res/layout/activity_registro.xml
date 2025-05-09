@@ -43,32 +43,32 @@
             android:layout_weight="1"
             >
             <!--        Correo-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    >
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Correo"
-                            android:textSize="20sp"
-                            android:layout_centerInParent="true"
-                            >
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="2"-->
+<!--                >-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    >-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        >-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Correo"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            >-->
 
-                        </TextView>
-                    </RelativeLayout>
-                </LinearLayout>
-            </LinearLayout>
+<!--                        </TextView>-->
+<!--                    </RelativeLayout>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
             <!--    input_correo-->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -81,7 +81,7 @@
                     >
                     <EditText
                         android:id="@+id/correo_reg"
-                        android:layout_width="180dp"
+                        android:layout_width="300dp"
                         android:layout_height="48dp"
                         android:hint="Ingrese su correo"
                         android:layout_centerInParent="true"
@@ -99,32 +99,32 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    >
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Contraseña"
-                            android:textSize="20sp"
-                            android:layout_centerInParent="true"
-                            >
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="2"-->
+<!--                >-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    >-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        >-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Contraseña"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            >-->
 
-                        </TextView>
-                    </RelativeLayout>
-                </LinearLayout>
-            </LinearLayout>
+<!--                        </TextView>-->
+<!--                    </RelativeLayout>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
             <!--    input password-->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -137,7 +137,7 @@
                     >
                     <EditText
                         android:id="@+id/pass_reg"
-                        android:layout_width="180dp"
+                        android:layout_width="300dp"
                         android:layout_height="48dp"
                         android:hint="Contraseña"
                         android:layout_centerInParent="true"
@@ -155,32 +155,32 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    >
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Contraseña"
-                            android:textSize="20sp"
-                            android:layout_centerInParent="true"
-                            >
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="2"-->
+<!--                >-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    >-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        >-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Contraseña"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            >-->
 
-                        </TextView>
-                    </RelativeLayout>
-                </LinearLayout>
-            </LinearLayout>
+<!--                        </TextView>-->
+<!--                    </RelativeLayout>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
             <!--    input_correo-->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -193,7 +193,7 @@
                     >
                     <EditText
                         android:id="@+id/passreg2"
-                        android:layout_width="180dp"
+                        android:layout_width="300dp"
                         android:layout_height="48dp"
                         android:hint="Repita la contraseña"
                         android:layout_centerInParent="true"
@@ -242,6 +242,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="¿Ya tienes cuenta?, Inicia sesión"
+                    android:textSize="20sp"
                     android:layout_centerInParent="true"
                     >
 
