@@ -6,12 +6,12 @@
     </style>
 
     <style name="Tema" parent="Base.Theme.Proyecto_app_moviles">
-        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:statusBarColor">@color/trasparente</item>
         <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
     </style>
 
     <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar">
-        <item name="background">@color/white</item>
+        <item name="background">@color/trasparente</item>
     </style>
 
 </resources>
