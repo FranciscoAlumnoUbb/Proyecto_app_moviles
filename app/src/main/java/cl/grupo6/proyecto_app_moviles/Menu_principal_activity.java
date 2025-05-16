@@ -27,6 +27,9 @@ public class Menu_principal_activity extends AppCompatActivity {
 
         Button btn_go_gallery = findViewById(R.id.btn_menu_gallery);
 
+
+
+
         btn_go_gallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

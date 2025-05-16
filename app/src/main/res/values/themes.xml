@@ -5,5 +5,13 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Proyecto_app_moviles" parent="Base.Theme.Proyecto_app_moviles" />
+    <style name="Tema" parent="Base.Theme.Proyecto_app_moviles">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="background">@color/white</item>
+    </style>
+
 </resources>
